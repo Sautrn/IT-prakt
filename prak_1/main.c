@@ -4,18 +4,18 @@
 int main()
 {
     int t1, t2, t3;
-    float rez;               //Оголошення змінних
+    float rez;               //РћРіРѕР»РѕС€РµРЅРЅСЏ Р·РјС–РЅРЅРёС…
 
     printf("Print the first value:\n");
     scanf("%d", &t1);
     printf("Print second value:\n");
     scanf("%d", &t2);
     printf("Print the third value:\n");
-    scanf("%d", &t3);       //Введення даних
+    scanf("%d", &t3);       //Р’РІРµРґРµРЅРЅСЏ РґР°РЅРёС…
 
     rez=(t1+t2+t3)/3;
-    rez=rez/3;   //Обчислення результату
-    printf("Time required to eat the cake: %0.2f", rez);    //Виведення результату
+    rez=rez/3;   //РћР±С‡РёСЃР»РµРЅРЅСЏ СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
+    printf("Time required to eat the cake: %0.2f", rez);    //Р’РёРІРµРґРµРЅРЅСЏ СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
 
     return 0;
 }
