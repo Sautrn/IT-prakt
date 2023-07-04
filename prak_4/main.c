@@ -6,9 +6,9 @@ int main()
     int n, k=0, i;
 
     printf("Enter a positive integer n: ");
-    scanf ("%d", &n); //вводимо число
+    scanf ("%d", &n); //РІРІРѕРґРёРјРѕ С‡РёСЃР»Рѕ
 
-    for (i=1; i<=n; i++) //шукаємо результат
+    for (i=1; i<=n; i++) //С€СѓРєР°С”РјРѕ СЂРµР·СѓР»СЊС‚Р°С‚
     {
         if (n/i==n%i)
         {
@@ -16,6 +16,6 @@ int main()
         }
     }
 
-    printf("\nNumber of equal divisors of a number %d: %d\n", n, k); //виводимо результат
+    printf("\nNumber of equal divisors of a number %d: %d\n", n, k); //РІРёРІРѕРґРёРјРѕ СЂРµР·СѓР»СЊС‚Р°С‚
     return 0;
 }
