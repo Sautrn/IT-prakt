@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <string.h>
 
-char functoupper (char str[15])  //функція для переведення до великого регістру
+char functoupper (char str[15])  //С„СѓРЅРєС†С–СЏ РґР»СЏ РїРµСЂРµРІРµРґРµРЅРЅСЏ РґРѕ РІРµР»РёРєРѕРіРѕ СЂРµРіС–СЃС‚СЂСѓ
 {
     int i, len;
     len=strlen(str);
@@ -14,7 +14,7 @@ char functoupper (char str[15])  //функція для переведення до великого регістру
     return str;
 }
 
-char funcseachchar(char str[15])  //функція для пошуку кількості символів
+char funcseachchar(char str[15])  //С„СѓРЅРєС†С–СЏ РґР»СЏ РїРѕС€СѓРєСѓ РєС–Р»СЊРєРѕСЃС‚С– СЃРёРјРІРѕР»С–РІ
 {
     int i, j , index=0, len;
     len = strlen(str);
@@ -37,7 +37,7 @@ char funcseachchar(char str[15])  //функція для пошуку кількості символів
     return str;
 }
 
-int funccountrez(char s[15], char str[15])  //функція для пошуку кількості анограм
+int funccountrez(char s[15], char str[15])  //С„СѓРЅРєС†С–СЏ РґР»СЏ РїРѕС€СѓРєСѓ РєС–Р»СЊРєРѕСЃС‚С– Р°РЅРѕРіСЂР°Рј
 {
     int len1, len2, i, j, k, rez=1, d, dil=1;
 
@@ -76,8 +76,8 @@ int main()
     char str[15], s[15];
     int len, i, j, rez;
 
-    printf ("Введіть рядок\n");
-    scanf ("%s", &s);  //введення даних
+    printf ("Р’РІРµРґС–С‚СЊ СЂСЏРґРѕРє\n");
+    scanf ("%s", &s);  //РІРІРµРґРµРЅРЅСЏ РґР°РЅРёС…
 
     functoupper(s);
 
@@ -85,13 +85,13 @@ int main()
 
     for (i=0;i<len;i++)
     {
-        str[i]=s[i];  //створення копії рядка
+        str[i]=s[i];  //СЃС‚РІРѕСЂРµРЅРЅСЏ РєРѕРїС–С— СЂСЏРґРєР°
     }
 
     funcseachchar(s);
 
     rez=funccountrez(s, str);
 
-    printf("\nКількість можливих анаграм: %d\n", rez);  //виведення результату
+    printf("\nРљС–Р»СЊРєС–СЃС‚СЊ РјРѕР¶Р»РёРІРёС… Р°РЅР°РіСЂР°Рј: %d\n", rez);  //РІРёРІРµРґРµРЅРЅСЏ СЂРµР·СѓР»СЊС‚Р°С‚Сѓ
     return 0;
 }
