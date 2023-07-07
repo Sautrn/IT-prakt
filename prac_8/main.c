@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
 #include <string.h>
 
 char funcseachchar(char str[15])  //функція для пошуку кількості символів
@@ -67,8 +64,6 @@ int main()
 
     printf ("Введіть рядок\n");
     scanf ("%s", &s);  //введення даних
-
-    functoupper(s);
 
     len=strlen(s);
 
