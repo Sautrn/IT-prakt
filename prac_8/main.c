@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <string.h>
 
-char functoupper (char str[15])  //функція для переведення до великого регістру
+char upper(char str[15])  //функція для переведення до великого регістру
 {
     int i, len;
     len=strlen(str);
@@ -14,7 +14,7 @@ char functoupper (char str[15])  //функція для переведення 
     return str;
 }
 
-char funcseachchar(char str[15])  //функція для пошуку кількості символів
+char seach(char str[15])  //функція для пошуку кількості символів
 {
     int i, j , index=0, len;
     len = strlen(str);
@@ -37,7 +37,7 @@ char funcseachchar(char str[15])  //функція для пошуку кіль�
     return str;
 }
 
-int funccountrez(char s[15], char str[15])  //функція для пошуку кількості анограм
+int countrez(char s[15], char str[15])  //функція для пошуку кількості анограм
 {
     int len1, len2, i, j, k, rez=1, d, dil=1;
 
@@ -76,10 +76,10 @@ int main()
     char str[15], s[15];
     int len, i, j, rez;
 
-    printf ("Введіть рядок\n");
+    printf ("Введіть рядок:\n");
     scanf ("%s", &s);  //введення даних
 
-    functoupper(s);
+    upper(s);
 
     len=strlen(s);
 
@@ -88,9 +88,9 @@ int main()
         str[i]=s[i];  //створення копії рядка
     }
 
-    funcseachchar(s);
+    seach(s);
 
-    rez=funccountrez(s, str);
+    rez=countrez(s, str);
 
     printf("\nКількість можливих анаграм: %d\n", rez);  //виведення результату
     return 0;
